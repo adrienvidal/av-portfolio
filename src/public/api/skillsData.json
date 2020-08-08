@@ -28,6 +28,14 @@
     "isShown": true
   },
   {
+    "title": "Gulp",
+    "isShown": true
+  },
+  {
+    "title": "Webpack",
+    "isShown": true
+  },
+  {
     "title": "Api Rest",
     "isShown": true
   },
