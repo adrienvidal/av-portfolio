@@ -1,0 +1,119 @@
+/*!
+  * Item: CodeX
+  * Description:  Personal Portfolio / Resume / CV / vCard Template
+  * Author/Developer: Exill
+  * Author/Developer URL: https://themeforest.net/user/exill
+  * Version: v1.0.0
+  * License: Themeforest Standard Licenses: https://themeforest.net/licenses
+  */
+
+/*----------- ADD YOUR CUSTOM CSS STYLES BELOW -----------*/
+
+/* Skills */
+#skills-list {
+  display: flex;
+  margin: 20px -5px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skill-item {
+  margin: 5px;
+}
+
+.skill-content {
+  background-color: #20c997;
+  color: #fff;
+  font-size: 18px;
+  padding: 5px 18px;
+  /* padding: 5px 20px; */
+  border-radius: 20px;
+}
+
+/* Portfolio */
+.filter-control .list-inline-item {
+  text-transform: capitalize;
+}
+
+.portfolio-area .portfolio-grid .portfolio-wrapper {
+  margin-bottom: 0;
+}
+
+.portfolio-wrapper {
+  width: 100%;
+  height: 250px;
+}
+
+.portfolio-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.portfolio-wrapper .item-content {
+  pointer-events: none;
+}
+
+.portfolio-wrapper .tags {
+  font-size: 13px;
+  margin-bottom: 10px;
+  color: rgba(233, 233, 233, 0.8);
+  text-transform: capitalize;
+}
+
+.portfolio-wrapper .tags span {
+  margin: 0 3px;
+}
+
+/* Buttons */
+.button-scheme2 {
+  background-color: #03a9f4;
+  color: white;
+  display: flex;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.button-scheme2:hover,
+.button-scheme2:focus {
+  background-color: #03a9f4;
+  color: white;
+}
+
+.button-scheme2 .icon {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.footer-area .social-medias-custom {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 1440px) {
+  .footer-area .social-medias-custom {
+    justify-content: left;
+    margin-bottom: 0;
+  }
+}
+
+.footer-area .social-medias-custom a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  cursor: pointer;
+  color: #fff;
+  background: #1c1c1c;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  margin: 0 10px;
+}
+
+.footer-area .social-medias-custom a:hover {
+  background: #20c997;
+}

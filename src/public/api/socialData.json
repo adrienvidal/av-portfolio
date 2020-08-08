@@ -1,0 +1,22 @@
+[
+  {
+    "name": "linkedin",
+    "icon": "ion-logo-linkedin",
+    "link": "https://www.linkedin.com/in/adrien-vidal-308b4864/"
+  },
+  {
+    "name": "twitter",
+    "icon": "ion-logo-twitter",
+    "link": "https://twitter.com/adrienvidalweb"
+  },
+  {
+    "name": "codepen",
+    "icon": "ion-logo-codepen",
+    "link": "https://codepen.io/adrienvidal"
+  },
+  {
+    "name": "github",
+    "icon": "ion-logo-github",
+    "link": "https://github.com/adrienvidal"
+  }
+]

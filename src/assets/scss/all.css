@@ -1,0 +1,181 @@
+#portfolio-modals a[class^='carousel-control-'] {
+  background-color: rgba(0, 0, 0, 0.1); }
+
+/* gallery */
+#portfolio-modals .modal-dialog {
+  margin-top: 0; }
+
+#portfolio-modals .project-gallery .carousel-item-inner {
+  width: 100%;
+  height: 450px;
+  -webkit-border-top-left-radius: 0.3rem;
+  -webkit-border-top-right-radius: 0.3rem;
+  -moz-border-radius-topleft: 0.3rem;
+  -moz-border-radius-topright: 0.3rem;
+  border-top-left-radius: 0.3rem;
+  border-top-right-radius: 0.3rem;
+  overflow: hidden; }
+
+#portfolio-modals .project-gallery .carousel-item-inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+/* content */
+#portfolio-modals .project-content {
+  padding: 20px;
+  display: flex;
+  flex-flow: column nowrap;
+  height: 100%; }
+
+#portfolio-modals .project-content h2 {
+  color: #616161;
+  margin-bottom: 0;
+  font-weight: bold; }
+
+#portfolio-modals .project-content .tags {
+  font-size: 13px;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  border-bottom: 1px solid silver;
+  padding-bottom: 10px; }
+
+#portfolio-modals .project-content .tags span {
+  display: inline-block;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.8);
+  border-radius: 30px;
+  padding: 0px 10px;
+  margin-right: 2px; }
+
+#portfolio-modals .project-content .highlight {
+  color: silver;
+  font-size: 13px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  font-weight: bold; }
+
+#portfolio-modals .project-content .project-action {
+  display: flex;
+  margin-top: auto;
+  margin-top: 20px; }
+
+#portfolio-modals .project-content .button {
+  margin-right: 10px; }
+
+#portfolio-modals .project-content .show-site {
+  margin-right: 10px; }
+
+#portfolio-modals .project-content .show-site,
+#portfolio-modals .project-content .show-repo {
+  padding-left: 10px;
+  padding-right: 10px; }
+
+@media (min-width: 768px) {
+  #portfolio-modals .project-content .show-site,
+  #portfolio-modals .project-content .show-repo {
+    padding-left: 15px;
+    padding-right: 15px; } }
+
+#portfolio-modals .project-content .button-close {
+  margin-left: auto; }
+
+/*!
+  * Item: CodeX
+  * Description:  Personal Portfolio / Resume / CV / vCard Template
+  * Author/Developer: Exill
+  * Author/Developer URL: https://themeforest.net/user/exill
+  * Version: v1.0.0
+  * License: Themeforest Standard Licenses: https://themeforest.net/licenses
+  */
+/*----------- ADD YOUR CUSTOM CSS STYLES BELOW -----------*/
+/* Skills */
+#skills-list {
+  display: flex;
+  margin: 20px -5px;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.skill-item {
+  margin: 5px; }
+
+.skill-content {
+  background-color: #20c997;
+  color: #fff;
+  font-size: 18px;
+  padding: 5px 18px;
+  /* padding: 5px 20px; */
+  border-radius: 20px; }
+
+/* Portfolio */
+.filter-control .list-inline-item {
+  text-transform: capitalize; }
+
+.portfolio-area .portfolio-grid .portfolio-wrapper {
+  margin-bottom: 0; }
+
+.portfolio-wrapper {
+  width: 100%;
+  height: 250px; }
+
+.portfolio-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none; }
+
+.portfolio-wrapper .item-content {
+  pointer-events: none; }
+
+.portfolio-wrapper .tags {
+  font-size: 13px;
+  margin-bottom: 10px;
+  color: rgba(233, 233, 233, 0.8);
+  text-transform: capitalize; }
+
+.portfolio-wrapper .tags span {
+  margin: 0 3px; }
+
+/* Buttons */
+.button-scheme2 {
+  background-color: #03a9f4;
+  color: white;
+  display: flex;
+  padding-left: 20px;
+  padding-right: 20px; }
+
+.button-scheme2:hover,
+.button-scheme2:focus {
+  background-color: #03a9f4;
+  color: white; }
+
+.button-scheme2 .icon {
+  font-size: 20px;
+  margin-right: 10px; }
+
+.footer-area .social-medias-custom {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px; }
+
+@media (min-width: 1440px) {
+  .footer-area .social-medias-custom {
+    justify-content: left;
+    margin-bottom: 0; } }
+
+.footer-area .social-medias-custom a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  cursor: pointer;
+  color: #fff;
+  background: #1c1c1c;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  margin: 0 10px; }
+
+.footer-area .social-medias-custom a:hover {
+  background: #20c997; }

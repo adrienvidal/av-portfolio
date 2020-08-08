@@ -1,0 +1,58 @@
+[
+  {
+    "title": "HTML",
+    "isShown": true
+  },
+  {
+    "title": "CSS/SASS/LESS",
+    "isShown": true
+  },
+  {
+    "title": "JavaScript",
+    "isShown": true
+  },
+  {
+    "title": "JQuery",
+    "isShown": true
+  },
+  {
+    "title": "Bootstrap",
+    "isShown": true
+  },
+  {
+    "title": "Responsive Design",
+    "isShown": true
+  },
+  {
+    "title": "Git",
+    "isShown": true
+  },
+  {
+    "title": "Api Rest",
+    "isShown": true
+  },
+  {
+    "title": "React",
+    "isShown": true
+  },
+  {
+    "title": "React-native",
+    "isShown": false
+  },
+  {
+    "title": "Wordpress",
+    "isShown": true
+  },
+  {
+    "title": "Adobe Photoshop",
+    "isShown": true
+  },
+  {
+    "title": "Adobe XD",
+    "isShown": true
+  },
+  {
+    "title": "Adobe Illustrator",
+    "isShown": true
+  }
+]

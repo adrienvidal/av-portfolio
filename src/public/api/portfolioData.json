@@ -1,0 +1,260 @@
+{
+  "catPortfolio": [
+    "react",
+    "react-native",
+    "wordpress",
+    "html",
+    "perso"
+  ],
+  "projectPortfolio": [
+    {
+      "title": "Allo Movies",
+      "cats": [
+        "react-native",
+        "perso"
+      ],
+      "tags": [
+        "react-native",
+        "expo",
+        "redux"
+      ],
+      "gallery": [
+        "./assets/img/projects/allo-movies/0.jpg"
+      ],
+      "highlight": "Movies Search Engine mobile app with OpenClassroom",
+      "desc": "Movies Search Engine, sharing, add to bookmarks ...",
+      "desc2": "React Native + Expo + Redux + TMDB Api",
+      "url": "https://expo.io/@webnrolls/allo-movies",
+      "repo": "https://github.com/adrienvidal/allo-movies"
+    },
+    {
+      "title": "Lifting Yves Rocher",
+      "cats": [
+        "html"
+      ],
+      "tags": [
+        "landing",
+        "javascript",
+        "html",
+        "css"
+      ],
+      "gallery": [
+        "./assets/img/projects/lifting-yves-rocher/0.jpg",
+        "./assets/img/projects/lifting-yves-rocher/1.jpg",
+        "./assets/img/projects/lifting-yves-rocher/2.jpg"
+      ],
+      "highlight": "Landing page Lifting Yves Rocher",
+      "desc": "Responsive Html Css Js with SAP Hybris",
+      "url": "https://www.yves-rocher.be/lifting-vegetal",
+      "repo": ""
+    },
+    {
+      "title": "Parfum Yves Rocher",
+      "cats": [
+        "html"
+      ],
+      "tags": [
+        "javascript",
+        "html",
+        "css"
+      ],
+      "gallery": [
+        "./assets/img/projects/parfum-yves-rocher/0.jpg",
+        "./assets/img/projects/parfum-yves-rocher/1.jpg",
+        "./assets/img/projects/parfum-yves-rocher/2.jpg"
+      ],
+      "highlight": "Landing page parfum Yves Rocher",
+      "desc": "Responsive Html Css Js with SAP Hybris",
+      "url": "https://www.yves-rocher.fr/conseils-beaute-et-videos/choisir-un-parfum-femme",
+      "repo": ""
+    },
+    {
+      "title": "Fond de teint Yves Rocher",
+      "cats": [
+        "html"
+      ],
+      "tags": [
+        "javascript",
+        "html",
+        "css"
+      ],
+      "gallery": [
+        "./assets/img/projects/fond-de-teint-yves-rocher/0.jpg",
+        "./assets/img/projects/fond-de-teint-yves-rocher/1.jpg",
+        "./assets/img/projects/fond-de-teint-yves-rocher/2.jpg",
+        "./assets/img/projects/fond-de-teint-yves-rocher/3.jpg",
+        "./assets/img/projects/fond-de-teint-yves-rocher/4.jpg"
+      ],
+      "highlight": "Landing page fond de teint Yves Rocher",
+      "desc": "Responsive Html Css Js with SAP Hybris",
+      "url": "https://www.yves-rocher.fr/conseils-beaute-et-videos/diagnostic-fond-de-teint",
+      "repo": ""
+    },
+    {
+      "title": "Jobmaker",
+      "cats": [
+        "wordpress"
+      ],
+      "tags": [
+        "javascript",
+        "html",
+        "css",
+        "wordpress"
+      ],
+      "gallery": [
+        "./assets/img/projects/jobmaker/0.jpg"
+      ],
+      "highlight": "Showcase site for Jobmaker",
+      "desc": "Specialized in supporting employees wishing to change jobs thanks to a virtual career coach.",
+      "url": "https://jobmaker.fr/",
+      "repo": ""
+    },
+    {
+      "title": "Kaireos",
+      "cats": [
+        "react"
+      ],
+      "tags": [
+        "react",
+        "React-semantic-ui"
+      ],
+      "gallery": [
+        "./assets/img/projects/kaireos/0.jpg",
+        "./assets/img/projects/kaireos/1.png",
+        "./assets/img/projects/kaireos/2.jpg"
+      ],
+      "highlight": "Employees Savings Plans tool",
+      "desc": "Web app for the management of employees Savings Plans",
+      "desc2": "React-semantic-ui / ReactJs",
+      "url": "",
+      "repo": ""
+    },
+    {
+      "title": "Meaculpa",
+      "cats": [
+        "wordpress"
+      ],
+      "tags": [
+        "wordpress"
+      ],
+      "gallery": [
+        "./assets/img/projects/meaculpa/0.jpg"
+      ],
+      "highlight": "Vitrine site for the musical collective Meaculpa ",
+      "desc": "Next events, members and photos",
+      "url": "https://www.meaculpa-officiel.com/",
+      "repo": ""
+    },
+    {
+      "title": "Neuradom Medico",
+      "cats": [
+        "react"
+      ],
+      "tags": [
+        "reactJs",
+        "html",
+        "css",
+        "webdesign"
+      ],
+      "gallery": [
+        "./assets/img/projects/neuradom-medico/0.jpg",
+        "./assets/img/projects/neuradom-medico/1.gif",
+        "./assets/img/projects/neuradom-medico/2.jpg",
+        "./assets/img/projects/neuradom-medico/4.jpg",
+        "./assets/img/projects/neuradom-medico/5.jpg",
+        "./assets/img/projects/neuradom-medico/6.jpg",
+        "./assets/img/projects/neuradom-medico/7.jpg",
+        "./assets/img/projects/neuradom-medico/8.jpg"
+      ],
+      "highlight": "Backoffice pour les médecins",
+      "desc": "Neuradom conçoit et développe un programme de réhabilitation destiné aux personnes présentant une perte d’autonomie liée à des troubles cognitivo-moteurs (Ex: AVC, Alzheimer)",
+      "desc2": "UX/UI - dev ReactJs. Création d'une timeline en dragNdrop pour créer des programmes d'exercices individuels",
+      "url": "",
+      "repo": ""
+    },
+    {
+      "title": "Legrand",
+      "cats": [
+        "html"
+      ],
+      "tags": [
+        "javascript",
+        "html",
+        "css"
+      ],
+      "gallery": [
+        "./assets/img/projects/legrand/0.jpg",
+        "./assets/img/projects/legrand/1.jpg",
+        "./assets/img/projects/legrand/2.jpg",
+        "./assets/img/projects/legrand/3.jpg"
+      ],
+      "highlight": "Ecommerce site Legrand with Publicis",
+      "desc": "Responsive Html Css Js",
+      "url": "https://www.legrand.fr/",
+      "repo": ""
+    },
+    {
+      "title": "Wibilong Wisell",
+      "cats": [
+        "html"
+      ],
+      "tags": [
+        "javascript",
+        "html",
+        "css"
+      ],
+      "gallery": [
+        "./assets/img/projects/wisell/0.jpg",
+        "./assets/img/projects/wisell/1.jpg",
+        "./assets/img/projects/wisell/2.jpg"
+      ],
+      "highlight": "Self-help forum for Big E-commerce (ex. Darty, Pixmania)",
+      "desc": "Responsive Html Css Js",
+      "url": "",
+      "repo": ""
+    },
+    {
+      "title": "Wibilong backoffice",
+      "cats": [
+        "html"
+      ],
+      "tags": [
+        "javascript",
+        "html",
+        "css",
+        "webdesign"
+      ],
+      "gallery": [
+        "./assets/img/projects/wibilong-back/0.jpg",
+        "./assets/img/projects/wibilong-back/1.jpg",
+        "./assets/img/projects/wibilong-back/2.jpg",
+        "./assets/img/projects/wibilong-back/3.jpg",
+        "./assets/img/projects/wibilong-back/4.jpg"
+      ],
+      "highlight": "Backoffice Clients",
+      "desc": "Wibilong fourni des outils d'aide à la décision d'achat pour les grands sites de e-commerce (ex. Darty, Pixmania)",
+      "desc2": "Html-css-js",
+      "url": "",
+      "repo": ""
+    },
+    {
+      "title": "ByAgency",
+      "cats": [
+        "html"
+      ],
+      "tags": [
+        "javascript",
+        "html",
+        "css"
+      ],
+      "gallery": [
+        "./assets/img/projects/bydesign/1.jpg",
+        "./assets/img/projects/bydesign/2.jpg"
+      ],
+      "highlight": "Site Vitrine de ByAgency",
+      "desc": "Débug de fonctionnalités",
+      "url": "https://www.byagency.com/",
+      "repo": ""
+    }
+  ]
+}
