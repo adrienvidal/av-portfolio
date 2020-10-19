@@ -8,6 +8,27 @@
   ],
   "projectPortfolio": [
     {
+      "title": "Delvaux Virtual Store",
+      "cats": [
+        "react"
+      ],
+      "tags": [
+        "react",
+        "next",
+        "redux",
+        "storybook",
+        "css-module"
+      ],
+      "gallery": [
+        "./assets/img/projects/delvaux/0.jpg"
+      ],
+      "highlight": "Landing page and virtual-store for Delvaux e-commerce",
+      "desc": "Virtual-showroom in three.js with a landing page in react/next/redux",
+      "desc2": "",
+      "url": "https://www.mazarine.com/en/delvaux-virtual-showroom-technological-activation",
+      "repo": ""
+    },
+    {
       "title": "Allo Movies",
       "cats": [
         "react-native",
