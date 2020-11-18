@@ -1,10 +1,18 @@
 [
   {
-    "title": "HTML",
+    "title": "HTML5",
     "isShown": true
   },
   {
-    "title": "CSS/SASS/LESS",
+    "title": "CSS3",
+    "isShown": true
+  },
+  {
+    "title": "SASS",
+    "isShown": true
+  },
+  {
+    "title": "LESS",
     "isShown": true
   },
   {
@@ -17,6 +25,10 @@
   },
   {
     "title": "Bootstrap",
+    "isShown": true
+  },
+  {
+    "title": "SemanticUI",
     "isShown": true
   },
   {
@@ -33,10 +45,6 @@
   },
   {
     "title": "Webpack",
-    "isShown": true
-  },
-  {
-    "title": "Api Rest",
     "isShown": true
   },
   {

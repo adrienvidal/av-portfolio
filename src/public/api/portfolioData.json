@@ -4,9 +4,30 @@
     "react-native",
     "wordpress",
     "html",
-    "perso"
+    "formation"
   ],
   "projectPortfolio": [
+    {
+      "title": "GithubFinder",
+      "cats": [
+        "react",
+        "formation"
+      ],
+      "tags": [
+        "react",
+        "hooks",
+        "context",
+        "github-api"
+      ],
+      "gallery": [
+        "./assets/img/projects/github-finder/0.jpg"
+      ],
+      "highlight": "Github profile finder",
+      "desc": "Formation Udemy TraversyMedia",
+      "desc2": "",
+      "url": "https://githubfinder6521348.netlify.app/",
+      "repo": "https://github.com/adrienvidal/github-finder-react-hooks-context"
+    },
     {
       "title": "Delvaux Virtual Store",
       "cats": [
@@ -22,8 +43,8 @@
       "gallery": [
         "./assets/img/projects/delvaux/0.jpg"
       ],
-      "highlight": "Landing page and virtual-store for Delvaux e-commerce",
-      "desc": "Virtual-showroom in three.js with a landing page in react/next/redux",
+      "highlight": "Developpement website for a virtuel showroom",
+      "desc": "Website in react/next/redux",
       "desc2": "",
       "url": "https://www.mazarine.com/en/delvaux-virtual-showroom-technological-activation",
       "repo": ""
@@ -32,19 +53,20 @@
       "title": "Allo Movies",
       "cats": [
         "react-native",
-        "perso"
+        "formation"
       ],
       "tags": [
         "react-native",
         "expo",
-        "redux"
+        "redux",
+        "TMDB Api"
       ],
       "gallery": [
         "./assets/img/projects/allo-movies/0.jpg"
       ],
-      "highlight": "Movies Search Engine mobile app with OpenClassroom",
-      "desc": "Movies Search Engine, sharing, add to bookmarks ...",
-      "desc2": "React Native + Expo + Redux + TMDB Api",
+      "highlight": "Movies Search Engine, sharing, add to bookmarks ...",
+      "desc": "Movies Search Engine mobile app with OpenClassroom",
+      "desc2": "",
       "url": "https://expo.io/@webnrolls/allo-movies",
       "repo": "https://github.com/adrienvidal/allo-movies"
     },
@@ -147,7 +169,7 @@
       "highlight": "Employees Savings Plans tool",
       "desc": "Web app for the management of employees Savings Plans",
       "desc2": "React-semantic-ui / ReactJs",
-      "url": "",
+      "url": "http://work.tchoweb.com/clients/kaireos/#/dashboard",
       "repo": ""
     },
     {
