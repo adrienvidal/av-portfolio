@@ -1,15 +1,15 @@
 class UI {
   constructor() {
-    this.rootPath = window.location.href;
-    this.skillsContainer = document.getElementById("skills-list");
-    this.portfolioModals = document.getElementById("portfolio-modals");
-    this.sideProjetsContainer = document.getElementById("side-projects-area");
-    this.sideProjetsModals = document.getElementById("side-projects-modals");
-    this.socialMedias = document.getElementById("social-medias");
+    this.rootPath = window.location.origin + '/';
+    this.skillsContainer = document.getElementById('skills-list');
+    this.portfolioModals = document.getElementById('portfolio-modals');
+    this.sideProjetsContainer = document.getElementById('side-projects-area');
+    this.sideProjetsModals = document.getElementById('side-projects-modals');
+    this.socialMedias = document.getElementById('social-medias');
   }
 
   showSkills(skills) {
-    let output = "";
+    let output = '';
 
     skills.forEach((skill) => {
       if (skill.isShown) {
@@ -25,7 +25,7 @@ class UI {
   }
 
   showGalleryCat(cats, container) {
-    const nav = container.querySelector(".filter-control");
+    const nav = container.querySelector('.filter-control');
     let categories = `
       <li class="list-inline-item tab-active" data-filter="*">
         All
@@ -40,15 +40,15 @@ class UI {
   }
 
   showGalleryProjects(projects, container) {
-    let output = "";
+    let output = '';
     projects.forEach((project, index) => {
-      let cats = "";
+      let cats = '';
       project.cats.forEach((cat) => {
-        cats += " " + cat;
+        cats += ' ' + cat;
       });
 
       // Display Tags
-      let tags = "";
+      let tags = '';
       project.tags.forEach((tag) => {
         tags += `
             <span>${tag}</span>
@@ -59,7 +59,9 @@ class UI {
         <div class="single-item col-12 col-lg-4${cats}">
           <a class="portfolio-item" data-target="item-${index}">
             <div class="portfolio-wrapper">
-              <img class="img-fluid" alt="Item" src="${this.rootPath+project.gallery[0]}" />
+              <img class="img-fluid" alt="Item" src="${
+                this.rootPath + project.gallery[0]
+              }" />
               <div class="item-content">
                 <h6 class="content-title">${project.title}</h6>
                 <div class="tags">${tags}</div>
@@ -71,13 +73,13 @@ class UI {
         `;
     });
 
-    container.querySelector(".portfolio-grid").innerHTML = output;
+    container.querySelector('.portfolio-grid').innerHTML = output;
   }
 
   showGalleryModals(project, index) {
     const imgsLength = project.gallery.length;
     // Display controls
-    let controls = "";
+    let controls = '';
     if (imgsLength > 1) {
       controls = `
         <a
@@ -108,11 +110,11 @@ class UI {
     }
 
     // Display indicators
-    let indicatorsWrapper = "";
+    let indicatorsWrapper = '';
     if (imgsLength > 1) {
-      let indicators = "";
+      let indicators = '';
       for (let index = 0; index < imgsLength; index++) {
-        const isActive = index === 0 ? "active" : "";
+        const isActive = index === 0 ? 'active' : '';
         indicators += `
         <li
           data-target="#project-carousel"
@@ -130,15 +132,15 @@ class UI {
     }
 
     // Display Images galleries
-    let images = "";
+    let images = '';
     project.gallery.forEach((img, index) => {
-      const isActive = index === 0 ? " active" : "";
+      const isActive = index === 0 ? ' active' : '';
       images += `
         <div class="carousel-item ${isActive}">
           <div class="carousel-item-inner">
             <img
-              src="${this.rootPath+img}"
-              alt="${this.rootPath+img}"
+              src="${this.rootPath + img}"
+              alt="${this.rootPath + img}"
             />
           </div>
         </div>
@@ -146,7 +148,7 @@ class UI {
     });
 
     // Display Tags
-    let tags = "";
+    let tags = '';
     project.tags.forEach((tag) => {
       tags += `
           <span>${tag}</span>
@@ -216,11 +218,11 @@ class UI {
 
     this.portfolioModals.innerHTML = output;
 
-    $(`#item-${index}`).modal("show");
+    $(`#item-${index}`).modal('show');
   }
 
   showSocials(socials) {
-    let output = "";
+    let output = '';
     socials.forEach((social) => {
       output += `
       <a class="${social.name}" href="${social.link}" target="_blank">
