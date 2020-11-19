@@ -4,9 +4,14 @@ const ui = new UI();
 class App {
   initEventListeners() {
     // Event listeners
+    document.querySelector('#portfolio-area .portfolio-grid').addEventListener('click', (e) => {
+      this.showModal(e, 'portfolio');
+    });
     document
-      .querySelector(".portfolio-grid")
-      .addEventListener("click", this.showModal);
+      .querySelector('#side-projects-area .portfolio-grid')
+      .addEventListener('click', (e) => {
+        this.showModal(e, 'side-projects');
+      });
   }
 
   displaySkills() {
@@ -16,26 +21,43 @@ class App {
     });
   }
 
-  displayPortfolio() {
+  displayGallery() {
     // Display portfolio
+    const portfolioContainer = document.getElementById('portfolio-area');
     api.getPortfolio().then((data) => {
-      ui.showPortfolioCat(data.catPortfolio);
-      ui.showPortfolioProjects(data.projectPortfolio);
+      ui.showGalleryCat(data.cats, portfolioContainer);
+      ui.showGalleryProjects(data.projects, portfolioContainer);
 
       setTimeout(() => {
-        portfolio.initIsotope();
+        portfolio.initIsotope('#portfolio-area');
+      }, 1000);
+    });
+
+    const sideProjectsContainer = document.getElementById('side-projects-area');
+    api.getSideProjects().then((data) => {
+      ui.showGalleryCat(data.cats, sideProjectsContainer);
+      ui.showGalleryProjects(data.projects, sideProjectsContainer);
+
+      setTimeout(() => {
+        portfolio.initIsotope('#side-projects-area');
       }, 1000);
     });
   }
 
-  showModal(e) {
-    if (e.target.parentElement.classList.contains("portfolio-item")) {
+  showModal(e, data) {
+    if (e.target.parentElement.classList.contains('portfolio-item')) {
       const target = e.target.parentElement.dataset.target;
-      const index = target.split("-").pop();
+      const index = target.split('-').pop();
 
-      api.getPortfolio().then((data) => {
-        ui.showPortfolioModals(data.projectPortfolio[index], index);
-      });
+      if (data === 'portfolio') {
+        api.getPortfolio().then((data) => {
+          ui.showGalleryModals(data.projects[index], index);
+        });
+      }else if(data === 'side-projects'){
+        api.getSideProjects().then((data) => {
+          ui.showGalleryModals(data.projects[index], index);
+        });
+      }
     }
   }
 
@@ -46,7 +68,7 @@ class App {
   }
 
   displayCopyrightYear() {
-    const cYear = document.getElementById("c-year");
+    const cYear = document.getElementById('c-year');
     const date = new Date();
     cYear.innerHTML = date.getFullYear();
   }
@@ -55,6 +77,6 @@ class App {
 const app = new App();
 app.initEventListeners();
 app.displaySkills();
-app.displayPortfolio();
+app.displayGallery();
 app.displaySocials();
 app.displayCopyrightYear();

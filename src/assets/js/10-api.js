@@ -12,6 +12,11 @@ class Api {
     const res = await fetch(this.rootPath + 'public/api/portfolioData.json');
     return await res.json();
   }
+  
+  async getSideProjects() {
+    const res = await fetch(this.rootPath + 'public/api/sideProjectsData.json');
+    return await res.json();
+  }
 
   async getSocials() {
     const res = await fetch(this.rootPath + 'public/api/socialData.json');

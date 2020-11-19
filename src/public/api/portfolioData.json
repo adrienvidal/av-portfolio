@@ -1,33 +1,10 @@
 {
-  "catPortfolio": [
+  "cats": [
     "react",
-    "react-native",
     "wordpress",
-    "html",
-    "formation"
+    "html"
   ],
-  "projectPortfolio": [
-    {
-      "title": "GithubFinder",
-      "cats": [
-        "react",
-        "formation"
-      ],
-      "tags": [
-        "react",
-        "hooks",
-        "context",
-        "github-api"
-      ],
-      "gallery": [
-        "./assets/img/projects/github-finder/0.jpg"
-      ],
-      "highlight": "Github profile finder",
-      "desc": "Formation Udemy TraversyMedia",
-      "desc2": "",
-      "url": "https://githubfinder6521348.netlify.app/",
-      "repo": "https://github.com/adrienvidal/github-finder-react-hooks-context"
-    },
+  "projects": [
     {
       "title": "Delvaux Virtual Store",
       "cats": [
@@ -48,27 +25,6 @@
       "desc2": "",
       "url": "https://www.mazarine.com/en/delvaux-virtual-showroom-technological-activation",
       "repo": ""
-    },
-    {
-      "title": "Allo Movies",
-      "cats": [
-        "react-native",
-        "formation"
-      ],
-      "tags": [
-        "react-native",
-        "expo",
-        "redux",
-        "TMDB Api"
-      ],
-      "gallery": [
-        "./assets/img/projects/allo-movies/0.jpg"
-      ],
-      "highlight": "Movies Search Engine, sharing, add to bookmarks ...",
-      "desc": "Movies Search Engine mobile app with OpenClassroom",
-      "desc2": "",
-      "url": "https://expo.io/@webnrolls/allo-movies",
-      "repo": "https://github.com/adrienvidal/allo-movies"
     },
     {
       "title": "Lifting Yves Rocher",

@@ -20,19 +20,19 @@
  */
 
 (function ($) {
-  "use strict";
+  'use strict';
   $(function () {
     /*----------- Globals -----------*/
 
     // Scrolling animation if the user clicks on a Hash link that has 'data-scroll' attribute
-    $(document).on("click", 'a[data-scroll][href^="#"]', function (e) {
-      var id = $(this).attr("href");
+    $(document).on('click', 'a[data-scroll][href^="#"]', function (e) {
+      var id = $(this).attr('href');
       var $id = $(id);
       if ($id.length === 0) {
         return;
       }
       e.preventDefault();
-      $("body, html").animate(
+      $('body, html').animate(
         {
           scrollTop: $id.offset().top,
         },
@@ -42,26 +42,26 @@
 
     /*----------- Sidebar -----------*/
 
-    $("body").scrollspy({
-      target: ".sidebar .list-menu",
+    $('body').scrollspy({
+      target: '.sidebar .list-menu',
     });
 
-    $(".sidebar .list-menu")
+    $('.sidebar .list-menu')
       .clone()
       .children()
-      .appendTo(".mobile-navbar .navbar-nav")
-      .find(".nav-link")
-      .removeClass("active");
+      .appendTo('.mobile-navbar .navbar-nav')
+      .find('.nav-link')
+      .removeClass('active');
 
-    $(document).on("mouseup", function (event) {
-      if ($(".mobile-navbar #mobileNavbarSupportedContent").hasClass("show")) {
+    $(document).on('mouseup', function (event) {
+      if ($('.mobile-navbar #mobileNavbarSupportedContent').hasClass('show')) {
         // The mobile Bootstrap navbar dropdown
-        var navbarToggler = $(".mobile-navbar .navbar-toggler");
+        var navbarToggler = $('.mobile-navbar .navbar-toggler');
         if (
           !navbarToggler.is(event.target) &&
           navbarToggler.has(event.target).length === 0
         ) {
-          navbarToggler.trigger("click");
+          navbarToggler.trigger('click');
         }
       }
     });
@@ -80,22 +80,22 @@
 
       function initHeadline() {
         // Initialise headline animation
-        animateHeadline($(".cd-headline"));
+        animateHeadline($('.cd-headline'));
       }
 
       function animateHeadline($headlines) {
         var duration = animationDelay;
         $headlines.each(function () {
           var headline = $(this);
-          if (headline.hasClass("clip")) {
-            var spanWrapper = headline.find(".cd-words-wrapper"),
+          if (headline.hasClass('clip')) {
+            var spanWrapper = headline.find('.cd-words-wrapper'),
               newWidth = spanWrapper.width() + 10;
-            spanWrapper.css("width", newWidth);
+            spanWrapper.css('width', newWidth);
           }
 
           //trigger animation
           setTimeout(function () {
-            hideWord(headline.find(".is-visible").eq(0));
+            hideWord(headline.find('.is-visible').eq(0));
           }, duration);
         });
       }
@@ -103,10 +103,10 @@
       function hideWord($word) {
         var nextWord = takeNext($word);
 
-        if ($word.parents(".cd-headline").hasClass("clip")) {
-          $word.parents(".cd-words-wrapper").animate(
+        if ($word.parents('.cd-headline').hasClass('clip')) {
+          $word.parents('.cd-words-wrapper').animate(
             {
-              width: "2px",
+              width: '2px',
             },
             revealDuration,
             function () {
@@ -118,8 +118,8 @@
       }
 
       function showWord($word, $duration) {
-        if ($word.parents(".cd-headline").hasClass("clip")) {
-          $word.parents(".cd-words-wrapper").animate(
+        if ($word.parents('.cd-headline').hasClass('clip')) {
+          $word.parents('.cd-words-wrapper').animate(
             {
               width: $word.width() + 10,
             },
@@ -134,33 +134,33 @@
       }
 
       function takeNext($word) {
-        return !$word.is(":last-child")
+        return !$word.is(':last-child')
           ? $word.next()
           : $word.parent().children().eq(0);
       }
 
       function takePrev($word) {
-        return !$word.is(":first-child")
+        return !$word.is(':first-child')
           ? $word.prev()
           : $word.parent().children().last();
       }
 
       function switchWord($oldWord, $newWord) {
-        $oldWord.removeClass("is-visible").addClass("is-hidden");
-        $newWord.removeClass("is-hidden").addClass("is-visible");
+        $oldWord.removeClass('is-visible').addClass('is-hidden');
+        $newWord.removeClass('is-hidden').addClass('is-visible');
       }
     })();
 
     /* Home variants manager */
 
     // If Video variant
-    if ($(".home-area").hasClass("video-variant")) {
-      $("#homeVideo").YTPlayer();
+    if ($('.home-area').hasClass('video-variant')) {
+      $('#homeVideo').YTPlayer();
     }
 
     // If particles variant
-    else if ($(".home-area").hasClass("particles-variant")) {
-      particlesJS("particles-js", {
+    else if ($('.home-area').hasClass('particles-variant')) {
+      particlesJS('particles-js', {
         particles: {
           number: {
             value: 50,
@@ -170,19 +170,19 @@
             },
           },
           color: {
-            value: "#999999",
+            value: '#999999',
           },
           shape: {
-            type: "circle",
+            type: 'circle',
             stroke: {
               width: 0,
-              color: "#888888",
+              color: '#888888',
             },
             polygon: {
               nb_sides: 5,
             },
             image: {
-              src: "img/github.svg",
+              src: 'img/github.svg',
               width: 100,
               height: 100,
             },
@@ -210,17 +210,17 @@
           line_linked: {
             enable: true,
             distance: 150,
-            color: "#999999",
+            color: '#999999',
             opacity: 0.4,
             width: 1,
           },
           move: {
             enable: true,
             speed: 6,
-            direction: "none",
+            direction: 'none',
             random: false,
             straight: false,
-            out_mode: "out",
+            out_mode: 'out',
             bounce: false,
             attract: {
               enable: false,
@@ -230,15 +230,15 @@
           },
         },
         interactivity: {
-          detect_on: "canvas",
+          detect_on: 'canvas',
           events: {
             onhover: {
               enable: false,
-              mode: "repulse",
+              mode: 'repulse',
             },
             onclick: {
               enable: false,
-              mode: "push",
+              mode: 'push',
             },
             resize: true,
           },
@@ -273,8 +273,8 @@
     }
 
     // If galaxy variant
-    else if ($(".home-area").hasClass("galaxy-variant")) {
-      particlesJS("particles-js", {
+    else if ($('.home-area').hasClass('galaxy-variant')) {
+      particlesJS('particles-js', {
         particles: {
           number: {
             value: 100,
@@ -284,19 +284,19 @@
             },
           },
           color: {
-            value: "#ffffff",
+            value: '#ffffff',
           },
           shape: {
-            type: "circle",
+            type: 'circle',
             stroke: {
               width: 0,
-              color: "#000000",
+              color: '#000000',
             },
             polygon: {
               nb_sides: 5,
             },
             image: {
-              src: "img/github.svg",
+              src: 'img/github.svg',
               width: 100,
               height: 100,
             },
@@ -324,17 +324,17 @@
           line_linked: {
             enable: false,
             distance: 150,
-            color: "#ffffff",
+            color: '#ffffff',
             opacity: 0.4,
             width: 1,
           },
           move: {
             enable: true,
             speed: 1,
-            direction: "none",
+            direction: 'none',
             random: true,
             straight: false,
-            out_mode: "out",
+            out_mode: 'out',
             bounce: false,
             attract: {
               enable: false,
@@ -344,15 +344,15 @@
           },
         },
         interactivity: {
-          detect_on: "canvas",
+          detect_on: 'canvas',
           events: {
             onhover: {
               enable: false,
-              mode: "bubble",
+              mode: 'bubble',
             },
             onclick: {
               enable: false,
-              mode: "repulse",
+              mode: 'repulse',
             },
             resize: true,
           },
@@ -387,8 +387,8 @@
     }
 
     // If snow variant
-    else if ($(".home-area").hasClass("snow-variant")) {
-      particlesJS("particles-js", {
+    else if ($('.home-area').hasClass('snow-variant')) {
+      particlesJS('particles-js', {
         particles: {
           number: {
             value: 50,
@@ -398,19 +398,19 @@
             },
           },
           color: {
-            value: "#fff",
+            value: '#fff',
           },
           shape: {
-            type: "circle",
+            type: 'circle',
             stroke: {
               width: 0,
-              color: "#000000",
+              color: '#000000',
             },
             polygon: {
               nb_sides: 5,
             },
             image: {
-              src: "img/github.svg",
+              src: 'img/github.svg',
               width: 100,
               height: 100,
             },
@@ -438,17 +438,17 @@
           line_linked: {
             enable: false,
             distance: 500,
-            color: "#ffffff",
+            color: '#ffffff',
             opacity: 0.4,
             width: 2,
           },
           move: {
             enable: true,
             speed: 3,
-            direction: "bottom",
+            direction: 'bottom',
             random: false,
             straight: false,
-            out_mode: "out",
+            out_mode: 'out',
             bounce: false,
             attract: {
               enable: false,
@@ -458,15 +458,15 @@
           },
         },
         interactivity: {
-          detect_on: "canvas",
+          detect_on: 'canvas',
           events: {
             onhover: {
               enable: false,
-              mode: "bubble",
+              mode: 'bubble',
             },
             onclick: {
               enable: false,
-              mode: "repulse",
+              mode: 'repulse',
             },
             resize: true,
           },
@@ -501,8 +501,8 @@
     }
 
     // If bubble variant
-    else if ($(".home-area").hasClass("bubble-variant")) {
-      particlesJS("particles-js", {
+    else if ($('.home-area').hasClass('bubble-variant')) {
+      particlesJS('particles-js', {
         particles: {
           number: {
             value: 4,
@@ -512,19 +512,19 @@
             },
           },
           color: {
-            value: "#ffffff",
+            value: '#ffffff',
           },
           shape: {
-            type: "circle",
+            type: 'circle',
             stroke: {
               width: 0,
-              color: "#000",
+              color: '#000',
             },
             polygon: {
               nb_sides: 6,
             },
             image: {
-              src: "img/github.svg",
+              src: 'img/github.svg',
               width: 100,
               height: 100,
             },
@@ -552,17 +552,17 @@
           line_linked: {
             enable: false,
             distance: 200,
-            color: "#ffffff",
+            color: '#ffffff',
             opacity: 1,
             width: 2,
           },
           move: {
             enable: true,
             speed: 8,
-            direction: "none",
+            direction: 'none',
             random: false,
             straight: false,
-            out_mode: "out",
+            out_mode: 'out',
             bounce: false,
             attract: {
               enable: false,
@@ -572,15 +572,15 @@
           },
         },
         interactivity: {
-          detect_on: "canvas",
+          detect_on: 'canvas',
           events: {
             onhover: {
               enable: false,
-              mode: "grab",
+              mode: 'grab',
             },
             onclick: {
               enable: false,
-              mode: "push",
+              mode: 'push',
             },
             resize: true,
           },
@@ -616,7 +616,7 @@
 
     /*----------- Testimonials -----------*/
 
-    $(".testimonials-area .owl-carousel").owlCarousel({
+    $('.testimonials-area .owl-carousel').owlCarousel({
       items: 3,
       loop: true,
       margin: 30,
@@ -638,37 +638,37 @@
 
     /*----------- Contact -----------*/
 
-    $(".contact-form").on("submit", function (event) {
+    $('.contact-form').on('submit', function (event) {
       var form = $(this);
-      var submitBtn = form.find("#contact-submit");
+      var submitBtn = form.find('#contact-submit');
       var submitBtnText = submitBtn.text();
-      var feedbackEl = form.find(".contact-feedback");
+      var feedbackEl = form.find('.contact-feedback');
       event.preventDefault();
       // Waiting for the response from the server
-      submitBtn.html("Wait...").addClass("wait").prop("disabled", true);
+      submitBtn.html('Wait...').addClass('wait').prop('disabled', true);
       setTimeout(function () {
         // Posts the Form's data to the server using Ajax
         $.ajax({
-          url: form.attr("action"),
-          type: "POST",
+          url: form.attr('action'),
+          type: 'POST',
           data: form.serialize(),
         })
           // Getting a response from the server
           .done(function (response) {
             // If the PHP file succeed sending the message
-            if (response == "success") {
+            if (response == 'success') {
               // Feedback to the user
-              submitBtn.removeClass("wait").html("Success").addClass("success");
+              submitBtn.removeClass('wait').html('Success').addClass('success');
               feedbackEl
-                .addClass("success")
-                .html("Thank you for your message. It has been sent.")
+                .addClass('success')
+                .html('Thank you for your message. It has been sent.')
                 .fadeIn(200);
               setTimeout(function () {
                 submitBtn
                   .html(submitBtnText)
-                  .removeClass("success")
-                  .prop("disabled", false);
-                feedbackEl.fadeOut(200).removeClass("success").html("");
+                  .removeClass('success')
+                  .prop('disabled', false);
+                feedbackEl.fadeOut(200).removeClass('success').html('');
               }, 6000);
               // Clears the Form
               form[0].reset();
@@ -676,30 +676,30 @@
             } else {
               // Feedback to the user
               console.log(response);
-              submitBtn.removeClass("wait").html("Error").addClass("error");
+              submitBtn.removeClass('wait').html('Error').addClass('error');
               feedbackEl
-                .addClass("error")
+                .addClass('error')
                 .html(
-                  "Server error! Please check your browser console log for more details."
+                  'Server error! Please check your browser console log for more details.'
                 )
                 .fadeIn(200);
               setTimeout(function () {
                 submitBtn
                   .html(submitBtnText)
-                  .removeClass("error")
-                  .prop("disabled", false);
-                feedbackEl.fadeOut(200).removeClass("error").html("");
+                  .removeClass('error')
+                  .prop('disabled', false);
+                feedbackEl.fadeOut(200).removeClass('error').html('');
               }, 6000);
             }
           });
       }, 1000);
     });
   });
-  $(window).on("load", function () {
+  $(window).on('load', function () {
     /*----------- Preloader -----------*/
 
-    $(".preloader-icon").fadeOut(400);
-    $(".preloader").delay(500).fadeOut("slow");
+    $('.preloader-icon').fadeOut(400);
+    $('.preloader').delay(500).fadeOut('slow');
 
     /*----------- Portfolio -----------*/
 
@@ -747,45 +747,20 @@
 
 // Portfolio methods
 const portfolio = {
-  initIsotope() {
-    var grid = $(".portfolio-area .portfolio-grid");
-    var filters = $(".portfolio-area .filter-control li");
+  initIsotope(container) {
+    var grid = $(container).find('.portfolio-grid');
+    var filters = $(container).find('.filter-control li');
 
     grid.isotope({
-      itemSelector: ".single-item",
+      itemSelector: '.single-item',
     });
-    filters.on("click", function () {
-      filters.removeClass("tab-active");
-      $(this).addClass("tab-active");
-      var selector = $(this).data("filter");
+    filters.on('click', function () {
+      filters.removeClass('tab-active');
+      $(this).addClass('tab-active');
+      var selector = $(this).data('filter');
       grid.isotope({
         filter: selector,
-        transitionDuration: ".25s",
-      });
-    });
-  },
-  initModal() {
-    $(".portfolio-area .portfolio-grid .portfolio-item").each(function () {
-      var element = $(this);
-      var target = element.attr("href");
-      $(element).animatedModal({
-        animatedIn: "fadeIn",
-        animatedOut: "fadeOut",
-        animationDuration: ".15s",
-        beforeOpen: function () {
-          $(target + ".lightbox-wrapper .lightbox-gallery").owlCarousel({
-            loop: true,
-            margin: 10,
-            nav: false,
-            items: 1,
-            smartSpeed: 400,
-          });
-        },
-        afterClose: function () {
-          $(target + ".lightbox-wrapper .lightbox-gallery").trigger(
-            "destroy.owl.carousel"
-          );
-        },
+        transitionDuration: '.25s',
       });
     });
   },

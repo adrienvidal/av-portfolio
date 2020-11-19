@@ -2,8 +2,10 @@ class UI {
   constructor() {
     this.rootPath = window.location.href;
     this.skillsContainer = document.getElementById("skills-list");
-    this.portfolioContainer = document.getElementById("portfolio-area");
+    // this.portfolioContainer = document.getElementById("portfolio-area");
     this.portfolioModals = document.getElementById("portfolio-modals");
+    this.sideProjetsContainer = document.getElementById("side-projects-area");
+    this.sideProjetsModals = document.getElementById("side-projects-modals");
     this.socialMedias = document.getElementById("social-medias");
   }
 
@@ -23,8 +25,8 @@ class UI {
     this.skillsContainer.innerHTML = output;
   }
 
-  showPortfolioCat(cats) {
-    const nav = this.portfolioContainer.querySelector(".filter-control");
+  showGalleryCat(cats, container) {
+    const nav = container.querySelector(".filter-control");
     let categories = `
       <li class="list-inline-item tab-active" data-filter="*">
         All
@@ -38,7 +40,7 @@ class UI {
     nav.innerHTML = categories;
   }
 
-  showPortfolioProjects(projects) {
+  showGalleryProjects(projects, container) {
     let output = "";
     projects.forEach((project, index) => {
       let cats = "";
@@ -70,14 +72,10 @@ class UI {
         `;
     });
 
-    this.portfolioContainer.querySelector(".portfolio-grid").innerHTML = output;
+    container.querySelector(".portfolio-grid").innerHTML = output;
   }
 
-  showPortfolioModals(project, index) {
-    const container = this.portfolioContainer.querySelector(
-      "#portfolio-container"
-    );
-
+  showGalleryModals(project, index) {
     const imgsLength = project.gallery.length;
     // Display controls
     let controls = "";
