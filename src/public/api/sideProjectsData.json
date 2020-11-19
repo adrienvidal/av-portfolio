@@ -1,9 +1,34 @@
 {
   "cats": [
     "react",
-    "react-native"
+    "react-native",
+    "express"
   ],
   "projects": [
+    {
+      "title": "Contact Keeper",
+      "cats": [
+        "react",
+        "express",
+        "MongoDB"
+      ],
+      "tags": [
+        "react",
+        "hooks",
+        "context",
+        "full stack",
+        "express",
+        "mongoDB"
+      ],
+      "gallery": [
+        "assets/img/projects/contact-keeper/0.jpg"
+      ],
+      "highlight": "App for keeping contacts",
+      "desc": "App full stack React hooks express MongoDB with authentification ",
+      "desc2": "",
+      "url": "https://contact-keeper-12452.herokuapp.com/",
+      "repo": "https://github.com/adrienvidal/contact-keeper-react"
+    },
     {
       "title": "GithubFinder",
       "cats": [
