@@ -17,7 +17,7 @@
         "github-api"
       ],
       "gallery": [
-        "./assets/img/projects/github-finder/0.jpg"
+        "assets/img/projects/github-finder/0.jpg"
       ],
       "highlight": "Github profile finder",
       "desc": "Formation Udemy TraversyMedia",
@@ -38,7 +38,7 @@
         "TMDB Api"
       ],
       "gallery": [
-        "./assets/img/projects/allo-movies/0.jpg"
+        "assets/img/projects/allo-movies/0.jpg"
       ],
       "highlight": "Movies Search Engine, sharing, add to bookmarks ...",
       "desc": "Movies Search Engine mobile app with OpenClassroom",

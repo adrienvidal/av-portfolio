@@ -2,7 +2,6 @@ class UI {
   constructor() {
     this.rootPath = window.location.href;
     this.skillsContainer = document.getElementById("skills-list");
-    // this.portfolioContainer = document.getElementById("portfolio-area");
     this.portfolioModals = document.getElementById("portfolio-modals");
     this.sideProjetsContainer = document.getElementById("side-projects-area");
     this.sideProjetsModals = document.getElementById("side-projects-modals");
