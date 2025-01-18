@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "gulp 4 starter single page app",
   "main": "index.js",
+  "engines": {
+    "node": "10.24.x",
+    "npm": "6.14.x"
+  },
   "scripts": {
     "start": "gulp start",
     "build": "gulp build",
