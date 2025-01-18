@@ -134,10 +134,18 @@ gulp.task("serve-build", function () {
 gulp.task("start", gulp.series("sassTask", "serve-dev"));
 
 gulp.task(
-  "build",
+  "build-serve",
   gulp.series(
     "sassTask",
     gulp.parallel(["buildStyle", "buildJs", "fontTask", "publicTask", "imgTask", "gifTask", "htmlTask"]),
     "serve-build"
+  )
+);
+
+gulp.task(
+  "build",
+  gulp.series(
+    "sassTask",
+    gulp.parallel(["buildStyle", "buildJs", "fontTask", "publicTask", "imgTask", "gifTask", "htmlTask"])
   )
 );
