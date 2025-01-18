@@ -9,8 +9,7 @@
   },
   "scripts": {
     "start": "gulp start",
-    "build": "gulp build",
-    "build-serve": "gulp build-serve"
+    "build": "gulp build-serve"
   },
   "author": "mz",
   "license": "ISC",
