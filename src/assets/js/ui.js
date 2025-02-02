@@ -1,59 +1,59 @@
 class UI {
   constructor() {
-    this.rootPath = window.location.origin + '/';
-    this.skillsContainer = document.getElementById('skills-list');
-    this.portfolioModals = document.getElementById('portfolio-modals');
-    this.sideProjetsContainer = document.getElementById('side-projects-area');
-    this.sideProjetsModals = document.getElementById('side-projects-modals');
-    this.socialMedias = document.getElementById('social-medias');
+    this.rootPath = window.location.origin + '/'
+    this.skillsContainer = document.getElementById('skills-list')
+    this.portfolioModals = document.getElementById('portfolio-modals')
+    this.sideProjetsContainer = document.getElementById('side-projects-area')
+    this.sideProjetsModals = document.getElementById('side-projects-modals')
+    this.socialMedias = document.getElementById('social-medias')
   }
 
   showSkills(skills) {
-    let output = '';
+    let output = ''
 
-    skills.forEach((skill) => {
+    skills.forEach(skill => {
       if (skill.isShown) {
         output += `
                   <div class="skill-item">
                       <div class="skill-content">${skill.title}</div>
                   </div>
-              `;
+              `
       }
-    });
+    })
 
-    this.skillsContainer.innerHTML = output;
+    this.skillsContainer.innerHTML = output
   }
 
   showGalleryCat(cats, container) {
-    const nav = container.querySelector('.filter-control');
+    const nav = container.querySelector('.filter-control')
     let categories = `
       <li class="list-inline-item tab-active" data-filter="*">
         All
       </li>
-    `;
-    cats.forEach((cat) => {
+    `
+    cats.forEach(cat => {
       categories += `
           <li class="list-inline-item" data-filter=".${cat}">${cat}</li>
-        `;
-    });
-    nav.innerHTML = categories;
+        `
+    })
+    nav.innerHTML = categories
   }
 
   showGalleryProjects(projects, container) {
-    let output = '';
+    let output = ''
     projects.forEach((project, index) => {
-      let cats = '';
-      project.cats.forEach((cat) => {
-        cats += ' ' + cat;
-      });
+      let cats = ''
+      project.cats.forEach(cat => {
+        cats += ' ' + cat
+      })
 
       // Display Tags
-      let tags = '';
-      project.tags.forEach((tag) => {
+      let tags = ''
+      project.tags.forEach(tag => {
         tags += `
             <span>${tag}</span>
-          `;
-      });
+          `
+      })
 
       output += `
         <div class="single-item col-12 col-lg-4${cats}">
@@ -70,16 +70,16 @@ class UI {
             </div>
           </a>
         </div>
-        `;
-    });
+        `
+    })
 
-    container.querySelector('.portfolio-grid').innerHTML = output;
+    container.querySelector('.portfolio-grid').innerHTML = output
   }
 
   showGalleryModals(project, index) {
-    const imgsLength = project.gallery.length;
+    const imgsLength = project.gallery.length
     // Display controls
-    let controls = '';
+    let controls = ''
     if (imgsLength > 1) {
       controls = `
         <a
@@ -106,35 +106,35 @@ class UI {
           ></span>
           <span class="sr-only">Next</span>
         </a>
-      `;
+      `
     }
 
     // Display indicators
-    let indicatorsWrapper = '';
+    let indicatorsWrapper = ''
     if (imgsLength > 1) {
-      let indicators = '';
+      let indicators = ''
       for (let index = 0; index < imgsLength; index++) {
-        const isActive = index === 0 ? 'active' : '';
+        const isActive = index === 0 ? 'active' : ''
         indicators += `
         <li
           data-target="#project-carousel"
           data-slide-to="${index}"
           class="${isActive}"
         ></li>
-        `;
+        `
       }
 
       indicatorsWrapper = `
       <ol class="carousel-indicators">
         ${indicators}
       </ol>
-      `;
+      `
     }
 
     // Display Images galleries
-    let images = '';
+    let images = ''
     project.gallery.forEach((img, index) => {
-      const isActive = index === 0 ? ' active' : '';
+      const isActive = index === 0 ? ' active' : ''
       images += `
         <div class="carousel-item ${isActive}">
           <div class="carousel-item-inner">
@@ -144,16 +144,16 @@ class UI {
             />
           </div>
         </div>
-        `;
-    });
+        `
+    })
 
     // Display Tags
-    let tags = '';
-    project.tags.forEach((tag) => {
+    let tags = ''
+    project.tags.forEach(tag => {
       tags += `
           <span>${tag}</span>
-        `;
-    });
+        `
+    })
 
     const output = `
     <div
@@ -214,23 +214,26 @@ class UI {
         </div>
       </div>
     </div>
-    `;
+    `
 
-    this.portfolioModals.innerHTML = output;
+    this.portfolioModals.innerHTML = output
 
-    $(`#item-${index}`).modal('show');
+    $(`#item-${index}`).modal('show')
   }
 
   showSocials(socials) {
-    let output = '';
-    socials.forEach((social) => {
+    let output = ''
+    socials.forEach(social => {
       output += `
       <a class="${social.name}" href="${social.link}" target="_blank">
         <i class="icon ${social.icon}"></i>
       </a>
-      `;
-    });
+      `
+    })
 
-    this.socialMedias.innerHTML = output;
+    this.socialMedias.innerHTML = output
   }
 }
+
+const ui = new UI()
+export default ui
