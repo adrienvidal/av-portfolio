@@ -18,9 +18,18 @@ class App {
 
   displaySkills() {
     // Display Skills
-    api.getSkills().then(data => {
-      ui.showSkills(data)
-    })
+    console.log('displaySkills')
+
+    api
+      .getSkills()
+      .then(data => {
+        console.log('displaySkills: success', data)
+
+        ui.showSkills(data)
+      })
+      .catch(error => {
+        console.log('displaySkills: error', error)
+      })
   }
 
   displayGallery() {

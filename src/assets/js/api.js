@@ -1,26 +1,25 @@
+import skillsData from '../../conf/skillsData.json'
+import sideProjectsData from '../../conf/sideProjectsData.json'
+import portfolioData from '../../conf/portfolioData.json'
+import socialData from '../../conf/socialData.json'
+
 class Api {
-  constructor() {
-    this.rootPath = window.location.origin
-  }
+  constructor() {}
 
   async getSkills() {
-    const res = await fetch(this.rootPath + '/src/api/skillsData.json')
-    return await res.json()
+    return await skillsData
   }
 
   async getPortfolio() {
-    const res = await fetch(this.rootPath + '/src/api/portfolioData.json')
-    return await res.json()
+    return await portfolioData
   }
 
   async getSideProjects() {
-    const res = await fetch(this.rootPath + '/src/api/sideProjectsData.json')
-    return await res.json()
+    return await sideProjectsData
   }
 
   async getSocials() {
-    const res = await fetch(this.rootPath + '/src/api/socialData.json')
-    return await res.json()
+    return await socialData
   }
 }
 
