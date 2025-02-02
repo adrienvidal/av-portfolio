@@ -18,7 +18,7 @@
         "css-module"
       ],
       "gallery": [
-        "src/assets/img/projects/delvaux/0.jpg"
+        "/src/assets/img/projects/delvaux/0.jpg"
       ],
       "highlight": "Developpement website for a virtuel showroom",
       "desc": "Website in react/next/redux",
@@ -38,9 +38,9 @@
         "css"
       ],
       "gallery": [
-        "src/assets/img/projects/lifting-yves-rocher/0.jpg",
-        "src/assets/img/projects/lifting-yves-rocher/1.jpg",
-        "src/assets/img/projects/lifting-yves-rocher/2.jpg"
+        "/src/assets/img/projects/lifting-yves-rocher/0.jpg",
+        "/src/assets/img/projects/lifting-yves-rocher/1.jpg",
+        "/src/assets/img/projects/lifting-yves-rocher/2.jpg"
       ],
       "highlight": "Landing page Lifting Yves Rocher",
       "desc": "Responsive Html Css Js with SAP Hybris",
@@ -58,9 +58,9 @@
         "css"
       ],
       "gallery": [
-        "src/assets/img/projects/parfum-yves-rocher/0.jpg",
-        "src/assets/img/projects/parfum-yves-rocher/1.jpg",
-        "src/assets/img/projects/parfum-yves-rocher/2.jpg"
+        "/src/assets/img/projects/parfum-yves-rocher/0.jpg",
+        "/src/assets/img/projects/parfum-yves-rocher/1.jpg",
+        "/src/assets/img/projects/parfum-yves-rocher/2.jpg"
       ],
       "highlight": "Landing page parfum Yves Rocher",
       "desc": "Responsive Html Css Js with SAP Hybris",
@@ -78,11 +78,11 @@
         "css"
       ],
       "gallery": [
-        "src/assets/img/projects/fond-de-teint-yves-rocher/0.jpg",
-        "src/assets/img/projects/fond-de-teint-yves-rocher/1.jpg",
-        "src/assets/img/projects/fond-de-teint-yves-rocher/2.jpg",
-        "src/assets/img/projects/fond-de-teint-yves-rocher/3.jpg",
-        "src/assets/img/projects/fond-de-teint-yves-rocher/4.jpg"
+        "/src/assets/img/projects/fond-de-teint-yves-rocher/0.jpg",
+        "/src/assets/img/projects/fond-de-teint-yves-rocher/1.jpg",
+        "/src/assets/img/projects/fond-de-teint-yves-rocher/2.jpg",
+        "/src/assets/img/projects/fond-de-teint-yves-rocher/3.jpg",
+        "/src/assets/img/projects/fond-de-teint-yves-rocher/4.jpg"
       ],
       "highlight": "Landing page fond de teint Yves Rocher",
       "desc": "Responsive Html Css Js with SAP Hybris",
@@ -101,7 +101,7 @@
         "wordpress"
       ],
       "gallery": [
-        "src/assets/img/projects/jobmaker/0.jpg"
+        "/src/assets/img/projects/jobmaker/0.jpg"
       ],
       "highlight": "Showcase site for Jobmaker",
       "desc": "Specialized in supporting employees wishing to change jobs thanks to a virtual career coach.",
@@ -118,9 +118,9 @@
         "React-semantic-ui"
       ],
       "gallery": [
-        "src/assets/img/projects/kaireos/0.jpg",
-        "src/assets/img/projects/kaireos/1.png",
-        "src/assets/img/projects/kaireos/2.jpg"
+        "/src/assets/img/projects/kaireos/0.jpg",
+        "/src/assets/img/projects/kaireos/1.png",
+        "/src/assets/img/projects/kaireos/2.jpg"
       ],
       "highlight": "Employees Savings Plans tool",
       "desc": "Web app for the management of employees Savings Plans",
@@ -137,7 +137,7 @@
         "wordpress"
       ],
       "gallery": [
-        "src/assets/img/projects/meaculpa/0.jpg"
+        "/src/assets/img/projects/meaculpa/0.jpg"
       ],
       "highlight": "Vitrine site for the musical collective Meaculpa ",
       "desc": "Next events, members and photos",
@@ -156,14 +156,14 @@
         "webdesign"
       ],
       "gallery": [
-        "src/assets/img/projects/neuradom-medico/0.jpg",
-        "src/assets/img/projects/neuradom-medico/1.gif",
-        "src/assets/img/projects/neuradom-medico/2.jpg",
-        "src/assets/img/projects/neuradom-medico/4.jpg",
-        "src/assets/img/projects/neuradom-medico/5.jpg",
-        "src/assets/img/projects/neuradom-medico/6.jpg",
-        "src/assets/img/projects/neuradom-medico/7.jpg",
-        "src/assets/img/projects/neuradom-medico/8.jpg"
+        "/src/assets/img/projects/neuradom-medico/0.jpg",
+        "/src/assets/img/projects/neuradom-medico/1.gif",
+        "/src/assets/img/projects/neuradom-medico/2.jpg",
+        "/src/assets/img/projects/neuradom-medico/4.jpg",
+        "/src/assets/img/projects/neuradom-medico/5.jpg",
+        "/src/assets/img/projects/neuradom-medico/6.jpg",
+        "/src/assets/img/projects/neuradom-medico/7.jpg",
+        "/src/assets/img/projects/neuradom-medico/8.jpg"
       ],
       "highlight": "Backoffice pour les médecins",
       "desc": "Neuradom conçoit et développe un programme de réhabilitation destiné aux personnes présentant une perte d’autonomie liée à des troubles cognitivo-moteurs (Ex: AVC, Alzheimer)",
@@ -182,10 +182,10 @@
         "css"
       ],
       "gallery": [
-        "src/assets/img/projects/legrand/0.jpg",
-        "src/assets/img/projects/legrand/1.jpg",
-        "src/assets/img/projects/legrand/2.jpg",
-        "src/assets/img/projects/legrand/3.jpg"
+        "/src/assets/img/projects/legrand/0.jpg",
+        "/src/assets/img/projects/legrand/1.jpg",
+        "/src/assets/img/projects/legrand/2.jpg",
+        "/src/assets/img/projects/legrand/3.jpg"
       ],
       "highlight": "Ecommerce site Legrand with Publicis",
       "desc": "Responsive Html Css Js",
@@ -203,9 +203,9 @@
         "css"
       ],
       "gallery": [
-        "src/assets/img/projects/wisell/0.jpg",
-        "src/assets/img/projects/wisell/1.jpg",
-        "src/assets/img/projects/wisell/2.jpg"
+        "/src/assets/img/projects/wisell/0.jpg",
+        "/src/assets/img/projects/wisell/1.jpg",
+        "/src/assets/img/projects/wisell/2.jpg"
       ],
       "highlight": "Self-help forum for Big E-commerce (ex. Darty, Pixmania)",
       "desc": "Responsive Html Css Js",
@@ -224,11 +224,11 @@
         "webdesign"
       ],
       "gallery": [
-        "src/assets/img/projects/wibilong-back/0.jpg",
-        "src/assets/img/projects/wibilong-back/1.jpg",
-        "src/assets/img/projects/wibilong-back/2.jpg",
-        "src/assets/img/projects/wibilong-back/3.jpg",
-        "src/assets/img/projects/wibilong-back/4.jpg"
+        "/src/assets/img/projects/wibilong-back/0.jpg",
+        "/src/assets/img/projects/wibilong-back/1.jpg",
+        "/src/assets/img/projects/wibilong-back/2.jpg",
+        "/src/assets/img/projects/wibilong-back/3.jpg",
+        "/src/assets/img/projects/wibilong-back/4.jpg"
       ],
       "highlight": "Backoffice Clients",
       "desc": "Wibilong fourni des outils d'aide à la décision d'achat pour les grands sites de e-commerce (ex. Darty, Pixmania)",
@@ -247,8 +247,8 @@
         "css"
       ],
       "gallery": [
-        "src/assets/img/projects/bydesign/1.jpg",
-        "src/assets/img/projects/bydesign/2.jpg"
+        "/src/assets/img/projects/bydesign/1.jpg",
+        "/src/assets/img/projects/bydesign/2.jpg"
       ],
       "highlight": "Site Vitrine de ByAgency",
       "desc": "Débug de fonctionnalités",

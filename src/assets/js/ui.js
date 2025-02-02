@@ -60,7 +60,7 @@ class UI {
           <a class="portfolio-item" data-target="item-${index}">
             <div class="portfolio-wrapper">
               <img class="img-fluid" alt="Item" src="${
-                this.rootPath + project.gallery[0]
+                new URL(project.gallery[0], import.meta.url).href
               }" />
               <div class="item-content">
                 <h6 class="content-title">${project.title}</h6>
@@ -139,8 +139,8 @@ class UI {
         <div class="carousel-item ${isActive}">
           <div class="carousel-item-inner">
             <img
-              src="${this.rootPath + img}"
-              alt="${this.rootPath + img}"
+              src="${new URL(img, import.meta.url).href}"
+              alt="${img}"
             />
           </div>
         </div>
