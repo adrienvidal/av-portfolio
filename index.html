@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en">
   <head>
     <!-- Required meta tags-->
     <meta charset="utf-8" />
@@ -16,29 +16,29 @@
     <meta name="author" content="Adrien Vidal" />
     <meta property="og:url" content="http://www.adrienvidal.com" />
     <meta property="og:title" content="Adrien Vidal - Front-End Developer" />
+    <meta property="og:description" content="Adrien Vidal - Front-End Developer" />
     <meta
-      property="og:description"
-      content="Adrien Vidal - Front-End Developer"
+      property="og:image"
+      content="http://www.adrienvidal.com/src/assets/img/logo.JPG"
     />
-    <meta property="og:image" content="http://www.adrienvidal.com/assets/img/logo.JPG" />
     <meta property="og:site_name" content="Adrien Vidal" />
     <!-- Favicons-->
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="./assets/img/favicons/apple-touch-icon.png"
+      href="./src/assets/img/favicons/apple-touch-icon.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./assets/img/favicons/favicon-32x32.png"
+      href="./src/assets/img/favicons/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="./assets/img/favicons/favicon-16x16.png"
+      href="./src/assets/img/favicons/favicon-16x16.png"
     />
     <!-- Web fonts-->
     <link
@@ -47,18 +47,18 @@
     />
     <!--removeIf(production)-->
     <!-- CSS vendors-->
-    <link rel="stylesheet" href="./assets/css/1-bootstrap-custom.css" />
-    <link rel="stylesheet" href="./assets/css/2-ionicons.min.css" />
-    <link rel="stylesheet" href="./assets/css/3-owl.carousel.min.css" />
-    <link rel="stylesheet" href="./assets/css/4-owl.theme.default.min.css" />
-    <link rel="stylesheet" href="./assets/css/5-simplebar.min.css" />
-    <link rel="stylesheet" href="./assets/css/6-jquery.mb.YTPlayer.min.css" />
+    <link rel="stylesheet" href="./src/assets/css/1-bootstrap-custom.css" />
+    <link rel="stylesheet" href="./src/assets/css/2-ionicons.min.css" />
+    <link rel="stylesheet" href="./src/assets/css/3-owl.carousel.min.css" />
+    <link rel="stylesheet" href="./src/assets/css/4-owl.theme.default.min.css" />
+    <link rel="stylesheet" href="./src/assets/css/5-simplebar.min.css" />
+    <link rel="stylesheet" href="./src/assets/css/6-jquery.mb.YTPlayer.min.css" />
     <!-- Main CSS-->
-    <link rel="stylesheet" href="./assets/css/7-main.css" />
+    <link rel="stylesheet" href="./src/assets/css/7-main.css" />
     <!-- CSS Color scheme-->
-    <link id="color-scheme" rel="stylesheet" href="./assets/css/8-main-teal.css" />
+    <link id="color-scheme" rel="stylesheet" href="./src/assets/css/8-main-teal.css" />
     <!-- Custom CSS (Add your custom CSS styles to this file)-->
-    <link rel="stylesheet" href="./assets/scss/all.css" />
+    <link rel="stylesheet" href="./src/assets/scss/all.css" />
     <!--endRemoveIf(production)-->
 
     <!-- Title-->
@@ -70,16 +70,15 @@
       src="https://www.googletagmanager.com/gtag/js?id=UA-174489862-1"
     ></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
+      window.dataLayer = window.dataLayer || []
       function gtag() {
-        dataLayer.push(arguments);
+        dataLayer.push(arguments)
       }
-      gtag("js", new Date());
+      gtag('js', new Date())
 
-      gtag("config", "UA-174489862-1");
+      gtag('config', 'UA-174489862-1')
     </script>
   </head>
-
   <body>
     <!-- Preloader-->
     <div class="preloader">
@@ -107,10 +106,7 @@
           >
             <span class="nav-btn">Menu</span>
           </button>
-          <div
-            class="collapse navbar-collapse order-1"
-            id="mobileNavbarSupportedContent"
-          >
+          <div class="collapse navbar-collapse order-1" id="mobileNavbarSupportedContent">
             <ul class="navbar-nav mr-auto"></ul>
           </div>
         </nav>
@@ -119,7 +115,7 @@
             <a href="#home" data-scroll
               ><img
                 class="img-fluid sidebar-avatar"
-                src="./assets/img/profile-avatar.jpg"
+                src="./src/assets/img/profile-avatar.jpg"
                 alt="Profile avatar" /></a
             ><span class="sidebar-name">Adrien Vidal</span>
             <p class="sidebar-status">Available in Freelance</p>
@@ -136,18 +132,16 @@
                 <a class="nav-link" href="#services-area" data-scroll>Skills</a>
               </li>
               <li>
-                <a class="nav-link" href="#portfolio-area" data-scroll
-                  >Portfolio</a
-                >
+                <a class="nav-link" href="#portfolio-area" data-scroll>Portfolio</a>
               </li>
               <li>
                 <a class="nav-link" href="#side-projects-area" data-scroll
                   >Side Projects</a
                 >
               </li>
-              <li>
+              <!-- <li>
                 <a class="nav-link" href="#contact-area" data-scroll>Contact</a>
-              </li>
+              </li> -->
             </ul>
           </div>
         </nav>
@@ -159,7 +153,7 @@
         <section
           class="home-area element-cover-bg galaxy-variant"
           id="home-area"
-          style="background-image: url(./assets/img/home.jpg);"
+          style="background-image: url(./src/assets/img/home.jpg)"
         >
           <div id="particles-js"></div>
           <div class="container h-100">
@@ -198,7 +192,7 @@
               <div class="col-12 col-lg-5 about-img">
                 <img
                   class="img-fluid img-thumbnail"
-                  src="./assets/img/about-img.jpg"
+                  src="./src/assets/img/about-img.jpg"
                   alt="About Picture"
                 />
               </div>
@@ -211,12 +205,11 @@
                   </h6>
                   <div class="content-description">
                     <p>
-                      I am a freelancer based in France, self-taught in web
-                      development for 6 years. I develop interfaces in various
-                      sectors. Well-organised person, problem solver,
-                      independent employee with high attention to detail. Also I
-                      like working in a team, you'll learn faster and much more.
-                      Fan of travels, outdoor activities, TV series and more.
+                      I am a freelancer based in France, self-taught in web development
+                      for 6 years. I develop interfaces in various sectors. Well-organised
+                      person, problem solver, independent employee with high attention to
+                      detail. Also I like working in a team, you'll learn faster and much
+                      more. Fan of travels, outdoor activities, TV series and more.
                     </p>
                   </div>
                   <address class="content-info">
@@ -245,7 +238,7 @@
                   </address>
                   <a
                     class="btn content-download button-main button-scheme"
-                    href="public/docs/adrien-vidal-cv-2020.pdf"
+                    href="src/docs/adrien-vidal-cv-2020.pdf"
                     target="_blank"
                     role="button"
                     >Download CV</a
@@ -282,8 +275,7 @@
                   <i class="icon service-icon ion-ios-speedometer"></i>
                   <h6 class="service-title">Fast</h6>
                   <p class="service-description">
-                    Fast load times and lag free interaction, my highest
-                    priority.
+                    Fast load times and lag free interaction, my highest priority.
                   </p>
                 </div>
               </div>
@@ -313,8 +305,7 @@
                   <i class="icon service-icon ion-ios-rocket"></i>
                   <h6 class="service-title">Dynamic</h6>
                   <p class="service-description">
-                    Websites don't have to be static, I love making pages come
-                    to life.
+                    Websites don't have to be static, I love making pages come to life.
                   </p>
                 </div>
               </div>
@@ -339,15 +330,15 @@
         <section
           class="single-section element-cover-bg hire-area"
           id="hire-area"
-          style="background-image: url(img/hire.jpg);"
+          style="background-image: url(img/hire.jpg)"
         >
           <div class="container">
             <div class="row row-custom">
               <div class="col-12 col-md-8 content-part">
                 <h1 class="hire-title">Let's work together!</h1>
                 <p class="hire-description">
-                  I am available for freelance projects. Hire me and get your
-                  project done.
+                  I am available for freelance projects. Hire me and get your project
+                  done.
                 </p>
               </div>
               <div class="col-12 col-md-4 button-part">
@@ -381,9 +372,7 @@
                   role="group"
                   aria-label="Filter Control"
                 >
-                  <li class="list-inline-item tab-active" data-filter="*">
-                    All
-                  </li>
+                  <li class="list-inline-item tab-active" data-filter="*">All</li>
                 </ul>
               </div>
             </div>
@@ -413,9 +402,7 @@
                   role="group"
                   aria-label="Filter Control"
                 >
-                  <li class="list-inline-item tab-active" data-filter="*">
-                    All
-                  </li>
+                  <li class="list-inline-item tab-active" data-filter="*">All</li>
                 </ul>
               </div>
             </div>
@@ -428,20 +415,17 @@
         </section>
 
         <!-- Contact-->
-        <section class="single-section contact-area alt-bg" id="contact-area">
+        <!-- <section class="single-section contact-area alt-bg" id="contact-area">
           <div class="container">
             <div class="row">
               <div class="col-12">
                 <div class="section-heading">
                   <h2 class="section-title">Get in Touch</h2>
-                  <p class="section-description">
-                    Feel free to contact me anytime
-                  </p>
+                  <p class="section-description">Feel free to contact me anytime</p>
                 </div>
               </div>
             </div>
             <div class="row">
-              <!-- Contact form-->
               <div class="col-12">
                 <form
                   class="contact-form"
@@ -504,26 +488,19 @@
               </div>
             </div>
           </div>
-        </section>
+        </section> -->
 
         <!-- Footer-->
         <footer class="footer-area single-section">
           <div class="container">
             <div class="row mini-footer">
               <div id="social-medias" class="social-medias-custom">
-                <a class="twitter" href="#0"
-                  ><i class="icon ion-logo-twitter"></i></a
-                ><a class="instagram" href="#0"
-                  ><i class="icon ion-logo-instagram"></i></a
-                ><a class="linkedin" href="#0"
-                  ><i class="icon ion-logo-linkedin"></i></a
-                ><a class="youtube" href="#0"
-                  ><i class="icon ion-logo-youtube"></i></a
-                ><a class="github" href="#0"
-                  ><i class="icon ion-logo-github"></i></a
-                ><a class="facebook" href="#0"
-                  ><i class="icon ion-logo-facebook"></i
-                ></a>
+                <a class="twitter" href="#0"><i class="icon ion-logo-twitter"></i></a
+                ><a class="instagram" href="#0"><i class="icon ion-logo-instagram"></i></a
+                ><a class="linkedin" href="#0"><i class="icon ion-logo-linkedin"></i></a
+                ><a class="youtube" href="#0"><i class="icon ion-logo-youtube"></i></a
+                ><a class="github" href="#0"><i class="icon ion-logo-github"></i></a
+                ><a class="facebook" href="#0"><i class="icon ion-logo-facebook"></i></a>
               </div>
               <p class="copyright-notice col-12 col-lg-7">
                 ADRIENVIDAL ©<span id="c-year">2020</span>
@@ -536,19 +513,20 @@
 
     <!--removeIf(production)-->
     <!-- Scripts-->
-    <script src="./assets/js/1-jquery.min.js"></script>
-    <script src="./assets/js/2-bootstrap.bundle.min.js"></script>
-    <script src="./assets/js/3-isotope.pkgd.min.js"></script>
-    <script src="./assets/js/4-animatedModal.js"></script>
-    <script src="./assets/js/5-owl.carousel.min.js"></script>
-    <script src="./assets/js/6-simplebar.min.js"></script>
-    <script src="./assets/js/7-jquery.mb.YTPlayer.min.js"></script>
-    <script src="./assets/js/8-particles.js"></script>
-    <script src="./assets/js/9-main.js"></script>
+    <script src="./src/assets/js/1-jquery.min.js"></script>
+    <script src="./src/assets/js/2-bootstrap.bundle.min.js"></script>
+    <script src="./src/assets/js/3-isotope.pkgd.min.js"></script>
+    <script src="./src/assets/js/4-animatedModal.js"></script>
+    <script src="./src/assets/js/5-owl.carousel.min.js"></script>
+    <script src="./src/assets/js/6-simplebar.min.js"></script>
+    <script src="./src/assets/js/7-jquery.mb.YTPlayer.min.js"></script>
+    <script src="./src/assets/js/8-particles.js"></script>
+    <script src="./src/assets/js/9-main.js"></script>
     <!-- Custom JS (Add your custom JS scripts to this file)-->
-    <script src="./assets/js/10-api.js"></script>
-    <script src="./assets/js/11-ui.js"></script>
-    <script src="./assets/js/12-app.js"></script>
+    <script src="./src/assets/js/10-api.js"></script>
+    <script src="./src/assets/js/11-ui.js"></script>
+    <script src="./src/assets/js/12-app.js"></script>
     <!--endRemoveIf(production)-->
+
   </body>
 </html>

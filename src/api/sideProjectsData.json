@@ -21,7 +21,7 @@
         "mongoDB"
       ],
       "gallery": [
-        "assets/img/projects/contact-keeper/0.jpg"
+        "src/assets/img/projects/contact-keeper/0.jpg"
       ],
       "highlight": "App for keeping contacts",
       "desc": "App full stack React hooks express MongoDB with authentification ",
@@ -42,7 +42,7 @@
         "github-api"
       ],
       "gallery": [
-        "assets/img/projects/github-finder/0.jpg"
+        "src/assets/img/projects/github-finder/0.jpg"
       ],
       "highlight": "Github profile finder",
       "desc": "Formation Udemy TraversyMedia",
@@ -63,7 +63,7 @@
         "TMDB Api"
       ],
       "gallery": [
-        "assets/img/projects/allo-movies/0.jpg"
+        "src/assets/img/projects/allo-movies/0.jpg"
       ],
       "highlight": "Movies Search Engine, sharing, add to bookmarks ...",
       "desc": "Movies Search Engine mobile app with OpenClassroom",
